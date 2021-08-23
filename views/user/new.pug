@@ -1,0 +1,25 @@
+//- Index.pug
+<!DOCTYPE html>
+html
+    head
+        title New User!
+form(action="/add_User", method="POST")
+  p
+  | Firstname:    
+  input(type="text" name="firstname" value="Filip" required)
+  br
+  br
+  | Lastname: 
+  input(type="text" name="lastname" value="Kwiatek" required)
+  br
+  br
+  | E-mail: 
+  input(type="text" name="email" value="DobryEmail@gmail.com" required)
+  br
+  br
+  | Password: 
+  input(type="text" name="password" value="admin" required)
+  br
+  br
+  |
+  input(type="submit", value="Send",data-transition='fade', data-theme='c')
